@@ -1,0 +1,247 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #dde6fd;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1% 0px 3% 0px;
+    /* border: 1px solid #B7B7B7; */
+}
+
+#map {
+    width: auto;
+    height: 600px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.space {
+    margin: 1% 0px 3% 0px;
+}
+
+#menu-toggle {
+    margin: 0 0 3% 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #495045;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgb(225, 226, 207);
+}
+
+.nav-tabs {
+    border-bottom: 1px solid rgb(225, 226, 207);
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container2 {
+    max-width: 60rem;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+    margin-bottom: 3rem;
+    /* background-color: #3e3e3e; */
+    background-color: #101010;
+    -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
+    box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
+}
+
+
+/* Nav links */
+
+.navbar-link {
+    position: relative;
+    padding: 1rem;
+    font-weight: 500;
+    color: #BDBDBD;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+
+/* Active state gets a caret at the bottom */
+
+.navbar-link.active {
+    color: #fff;
+}
+
+.navbar-link.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+}
+
+#cy {
+    width: 1100px;
+    height: 600px;
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    /*z-index: 888;*/
+}
+
+#search-wrapper {
+    z-index: 1000;
+}
+
+
+/*h1 {
+    text-align: center;
+    font-size: 1em;
+    color: #494950;
+}*/
+
+.box h3 {
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.box {
+    width: 100%;
+    height: 250px;
+    background: #FFF;
+    margin: 40px auto;
+}
+
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+
+.effect1 {
+    -webkit-box-shadow: 9px 10px 16px -5px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 9px 10px 16px -5px rgba(148, 148, 148, 1);
+    box-shadow: 9px 10px 16px -5px rgba(148, 148, 148, 1);
+}
+
+
+/*==================================================
+ * Estilo Mapa
+ * ===============================================*/
+
+.manualButton {
+    padding: 15px 30px;
+    background-color: #308ba2;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color .5s;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/*.legend {
+    line-height: 24px;
+    color: #555;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 12px 18px;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}*/
+
+.legend {
+    color: #555;
+    padding: 6px 8px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+.legend li {
+    display: inline-block;
+    width: 0.6px;
+    height: 22px;
+}
+
+.legend .min {
+    float: left;
+    padding-bottom: 5px;
+}
+
+.legend .max {
+    float: right;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+/* Gradient transparent - color - transparent */
+
+hr.estilo1 {
+    border: 0;
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(76, 76, 76, 76.75), rgba(0, 0, 0, 0));
+}
