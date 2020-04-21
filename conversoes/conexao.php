@@ -4,11 +4,6 @@ $username = "root";
 $password = "root";
 $db_name = "seguranca";
 
-// $servername = "mysql.rodolfomarriel.com";
-// $username = "rodolfomarriel";
-// $db_name = "rodolfomarriel";
-// $password = "tcc123";
-
 // Cria Conexao
 $connection = mysqli_connect($servername, $username, $password, $db_name) or die("Falha ao conectar " . mysqli_error($connection));
 
